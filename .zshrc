@@ -67,6 +67,11 @@ function print_known_hosts (){
     fi
 }
 _chache_hosts=($(print_known_hosts))
+# sssh
+function sssh (){
+    scp ~/.zshrc ~/.*_zshrc $1:
+    ssh -A $1
+}
 # Timestamp generator
 alias tg='date "+%s" -d'
 # ssh agent for tmux
