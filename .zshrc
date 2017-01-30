@@ -126,6 +126,7 @@ else
 fi
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH=~/.pyenv/shims:$PATH
 # rbenv
 if [ -d ~/.rbenv ]; then
   echo "rbenv is installed"
@@ -133,3 +134,4 @@ else
   echo "rbenv is not installed"
 fi
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=~/.rbenv/shims:$PATH
