@@ -135,3 +135,5 @@ else
 fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=~/.rbenv/shims:$PATH
+# go
+export PATH=$PATH:/usr/local/go/bin
