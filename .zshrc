@@ -144,4 +144,6 @@ export PATH=$PATH:/usr/local/go/bin
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # jenv
+# https://github.com/gcuisinier/jenv
 eval "$(jenv init -)"
+export PATH=~/.jenv/bin:$PATH
