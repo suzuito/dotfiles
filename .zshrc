@@ -147,3 +147,8 @@ export PATH=$PATH:/usr/local/go/bin
 # https://github.com/gcuisinier/jenv
 eval "$(jenv init -)"
 export PATH=~/.jenv/bin:$PATH
+
+# goenv
+eval "$(goenv init -)"
+export GOENV_ROOT=~/.goenv
+export PATH=~/.goenv/shims:$GOENV_ROOT/bin:$PATH
