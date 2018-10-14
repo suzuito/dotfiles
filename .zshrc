@@ -69,7 +69,7 @@ function print_known_hosts (){
 _chache_hosts=($(print_known_hosts))
 # sssh
 function sssh (){
-    scp ~/.zshrc ~/.*_zshrc $1:
+    scp ~/.zshrc ~/.*_zshrc ~/.tmux.conf $1:
     ssh -A $1
 }
 # Timestamp generator
