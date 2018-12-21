@@ -93,9 +93,8 @@ prompt_color="%{${fg[cyan]}%}"
 # %% "
 # export PROMPT="😎  %{$fg[cyan]%}%D{%Y%m%d %T}%{$fg[default]%}%(?.$prompt_color.${fg[red]%}) [%?] %~ %{${fg[default]}%}
 # 🌱  %% "
-export PROMPT="%{$fg[cyan]%}%D{%Y%m%d %T}%{$fg[default]%}%(?.$prompt_color.${fg[red]%}) [%?] %~ %{${fg[default]}%}
+export PROMPT="%{$fg[cyan]%}%D{%Y%m%d %T}%{$fg[default]%}%(?.$prompt_color.${fg[red]%}) [%?] %M:%/ %{${fg[default]}%}
 %% "
-
 
 # -------------------
 # Specifiled settings
