@@ -147,4 +147,6 @@ export PATH=~/.jenv/bin:$PATH
 eval "$(goenv init -)"
 export GOENV_ROOT=~/.goenv
 export PATH=~/.goenv/shims:$GOENV_ROOT/bin:$PATH
-export GOROOT=`go env GOROOT`
+
+# Google Cloud Platform
+export PATH=~/go_appengine:$PATH
