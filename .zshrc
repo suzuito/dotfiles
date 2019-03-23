@@ -144,6 +144,8 @@ eval "$(jenv init -)"
 export PATH=~/.jenv/bin:$PATH
 
 # goenv
-eval "$(goenv init -)"
 export GOENV_ROOT=~/.goenv
-export PATH=~/.goenv/shims:$GOENV_ROOT/bin:$PATH
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+export PATH=$GOROOT/bin:$PATH
+export PATH=$GOPATH/bin:$PATH
