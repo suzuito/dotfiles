@@ -149,3 +149,6 @@ export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
 export PATH=$GOROOT/bin:$PATH
 eval "$(goenv init -)"
+
+# Flutter
+export PATH=$PATH:/opt/flutter/bin
