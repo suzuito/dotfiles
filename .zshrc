@@ -150,6 +150,9 @@ eval "$(goenv init -)"
 export PATH=$GOROOT/bin:$PATH
 eval "$(goenv init -)"
 
+# Flutter
+export PATH=$PATH:/opt/flutter/bin
+
 export VAULT_ADDR=https://vault.jxpress.io
 
 eval "$(direnv hook zsh)"
