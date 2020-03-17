@@ -107,7 +107,7 @@ if [ $? -eq 0 ]; then
 fi
 
 # For maven
-M3_HOME=/usr/local/apache-maven-3.3.3
+M3_HOME=/usr/local/apache-maven-3.6.3
 PATH=$PATH:$M3_HOME/bin
 # nvm
 if [ -d ~/.nvm ]; then
@@ -150,5 +150,14 @@ eval "$(goenv init -)"
 export PATH=$GOROOT/bin:$PATH
 eval "$(goenv init -)"
 
-# Flutter
-export PATH=$PATH:/opt/flutter/bin
+export VAULT_ADDR=https://vault.jxpress.io
+
+eval "$(direnv hook zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/suzukitaito/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/suzukitaito/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/suzukitaito/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/suzukitaito/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="$HOME/.poetry/bin:$PATH"
