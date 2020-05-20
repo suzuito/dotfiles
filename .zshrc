@@ -152,6 +152,7 @@ eval "$(goenv init -)"
 
 # Flutter
 export PATH=$PATH:/opt/flutter/bin
+export PATH=$PATH:$HOME/opt/flutter/bin
 
 export VAULT_ADDR=https://vault.jxpress.io
 
