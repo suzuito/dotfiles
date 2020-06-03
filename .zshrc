@@ -165,3 +165,4 @@ if [ -f '/Users/suzukitaito/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/suz
 if [ -f '/Users/suzukitaito/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/suzukitaito/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.serverless/bin:$PATH"
