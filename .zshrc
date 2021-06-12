@@ -106,17 +106,6 @@ if [ $? -eq 0 ]; then
     done
 fi
 
-# For maven
-M3_HOME=/usr/local/apache-maven-3.6.3
-PATH=$PATH:$M3_HOME/bin
-# nvm
-if [ -d ~/.nvm ]; then
-  echo "nvm is installed"
-else
-  echo "nvm is not installed"
-fi
-export NVM_DIR=`echo ~/.nvm`
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 # pyenv
 if [ -d ~/.pyenv ]; then
   echo "pyenv is installed"
@@ -134,19 +123,19 @@ else
 fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=~/.rbenv/shims:$PATH
+# nodenv
+if [ -d ~/.nodenv ]; then
+  echo "nodenv is installed"
+else
+  echo "nodenv is not installed"
+fi
 
 # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# jenv
-# https://github.com/gcuisinier/jenv
-eval "$(jenv init -)"
-export PATH=~/.jenv/bin:$PATH
-
 # goenv
 export GOENV_ROOT=~/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
-eval "$(goenv init -)"
 export PATH=$GOROOT/bin:$PATH
 eval "$(goenv init -)"
 
@@ -166,3 +155,6 @@ if [ -f '/Users/suzukitaito/google-cloud-sdk/completion.zsh.inc' ]; then . '/Use
 
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$HOME/.serverless/bin:$PATH"
+
+# nodenv
+eval "$(nodenv init -)"
